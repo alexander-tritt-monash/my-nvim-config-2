@@ -4,6 +4,11 @@ local plugins = {
 	{
 	    'nvim-lualine/lualine.nvim',
 	    dependencies = { 'nvim-tree/nvim-web-devicons' }
+	},
+
+	{
+		'nvim-telescope/telescope.nvim', tag = '0.1.8',
+		dependencies = { 'nvim-lua/plenary.nvim' }
 	}
 }
 
@@ -40,7 +45,8 @@ require("lazy").setup({
   -- },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  -- install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "rose-pine" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
