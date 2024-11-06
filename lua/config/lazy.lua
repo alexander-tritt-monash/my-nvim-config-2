@@ -1,13 +1,22 @@
 local plugins = {
-	{ "rose-pine/neovim", name = "rose-pine" },
-
 	{
-	    'nvim-lualine/lualine.nvim',
-	    dependencies = { 'nvim-tree/nvim-web-devicons' }
+		"rose-pine/neovim",
+		name = "rose-pine"
 	},
 
 	{
-		'nvim-telescope/telescope.nvim', tag = '0.1.8',
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+	},
+
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' }
+	},
+
+	{
+		'nvim-telescope/telescope.nvim',
+		tag = '0.1.8',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	}
 }
