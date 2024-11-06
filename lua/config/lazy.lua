@@ -10,6 +10,17 @@ local plugins = {
 	},
 
 	{
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+	},
+
+	{
+		'neovim/nvim-lspconfig',
+		'hrsh7th/cmp-nvim-lsp',
+		'hrsh7th/nvim-cmp'
+	},
+
+	{
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},

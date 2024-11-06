@@ -15,5 +15,12 @@ require("config.treesitter")
 -- Status line
 require("config.lualine")
 
+-- Language servers
+require("config.mason")
+require("config.lspconfig")
+
+-- Completion
+require("config.nvim-cmp")
+
 -- Fuzzy finder
 require("config.telescope")
