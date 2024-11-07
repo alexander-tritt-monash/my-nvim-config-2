@@ -1,7 +1,10 @@
+table.insert(vim.opt.path, "../node_modules/.bin")
+
 -- General
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = false
+vim.opt.scrolloff = 8
 
 -- Package manager
 require("config.lazy")

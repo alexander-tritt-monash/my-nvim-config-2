@@ -74,3 +74,20 @@ lsp_config.lua_ls.setup{
 lsp_config.pylsp.setup{}
 
 lsp_config.ltex.setup{}
+
+-- From https://github.com/davidmh/cspell.nvim
+
+local cspell = require('cspell')
+local null_ls = require("null-ls")
+null_ls.setup {
+    sources = {
+	null_ls.builtins.diagnostics.codespell,
+	-- null_ls.builtins.diagnostics.misspell,
+--         cspell.diagnostics.with({
+--     diagnostics_postprocess = function(diagnostic)
+--       diagnostic.severity = vim.diagnostic.severity["HINT"]
+--     end,
+--   }),
+-- 	cspell.code_actions
+    }
+}

@@ -10,8 +10,11 @@ local plugins = {
 	},
 
 	{
+		"davidmh/cspell.nvim",
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
+		"nvimtools/none-ls.nvim",
+		"jay-babu/mason-null-ls.nvim"
 	},
 
 	{
