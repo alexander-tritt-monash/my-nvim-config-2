@@ -6,6 +6,9 @@ vim.opt.relativenumber = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 
+-- Python
+vim.opt.colorcolumn = "80"
+
 -- Package manager
 require("config.lazy")
 
