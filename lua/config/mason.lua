@@ -14,5 +14,6 @@ require("mason-lspconfig").setup {
 		"lua_ls",
 		"pylsp",
 		"ltex",
+		"clangd"
 	},
 }
