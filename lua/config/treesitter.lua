@@ -19,7 +19,8 @@ require("nvim-treesitter.configs").setup({
 		"bibtex",
 		"powershell",
 		"yaml",
-		"markdown"
+		"markdown",
+		"julia"
 	},
 	sync_install = false,
 	highlight = { enable = true },
