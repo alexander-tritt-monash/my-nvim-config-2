@@ -4,6 +4,8 @@
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"c",
+		"cpp",
+		"glsl",
 		"lua",
 		"vim",
 		"vimdoc",
@@ -24,5 +26,5 @@ require("nvim-treesitter.configs").setup({
 	},
 	sync_install = false,
 	highlight = { enable = true },
-	indent = { enable = true },  
+	indent = { enable = true },
 })

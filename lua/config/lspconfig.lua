@@ -75,6 +75,8 @@ lsp_config.pylsp.setup{}
 
 lsp_config.ltex.setup{}
 
+lsp_config.clangd.setup{}
+
 -- From https://github.com/davidmh/cspell.nvim
 
 local cspell = require('cspell')
