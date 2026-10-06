@@ -1,4 +1,10 @@
-require('telescope').setup{}
+require('telescope').setup{
+    defaults = {
+    preview = {
+      treesitter = false, -- Disables treesitter in previewer to avoid the crash
+    }
+  }
+}
 
 -- See https://github.com/nvim-telescope/telescope.nvim
 local builtin = require("telescope.builtin")

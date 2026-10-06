@@ -32,6 +32,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
     vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
     vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+    vim.keymap.set('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
   end,
 })
 
@@ -78,6 +79,23 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- lsp_config.clangd.setup{}
 
 -- vim.lsp.enable("luals")
+
+local util = require('lspconfig.util')
+
+-- vim.lsp.config("pylsp", {
+--   settings = {
+--     pylsp = {
+--       plugins = {
+--         jedi = {
+--           -- Dynamically find the .venv python or fallback to system python
+--           environment = util.root_pattern(".venv")(vim.fn.getcwd()) and 
+--             (util.root_pattern(".venv")(vim.fn.getcwd()) .. "/.venv/bin/python") or nil
+--         },
+--       },
+--     },
+--   },
+-- })
+
 vim.lsp.enable("pylsp")
 vim.lsp.enable("ltex")
 vim.lsp.enable("clangd")
